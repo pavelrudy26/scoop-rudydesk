@@ -1,5 +1,5 @@
 {
-    "version": "0.2.12",
+    "version": "0.2.13",
     "description": "Remote desktop for your own devices: P2P, end-to-end encrypted, works in the browser.",
     "homepage": "https://rudydesk.com",
     "license": {
@@ -8,19 +8,26 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://rudydesk.com/downloads/v0.2.12/RudyDesk-Portable.exe#/RudyDesk.exe",
-            "hash": "845631c538ca1f1ab007bcbc18843434d9cfc19c156a15053f767567c06ce082"
+            "url": "https://rudydesk.com/downloads/v0.2.13/RudyDesk-Portable.exe#/RudyDesk.exe",
+            "hash": "5de213e30c19089d22f51d95a985f1b9e95de7518fe2569d1de4cfcad1cbbfbb"
         }
     },
     "bin": "RudyDesk.exe",
-    "shortcuts": [["RudyDesk.exe", "RudyDesk"]],
+    "shortcuts": [
+        [
+            "RudyDesk.exe",
+            "RudyDesk"
+        ]
+    ],
     "checkver": {
         "url": "https://rudydesk.com/version",
         "jsonpath": "$.version"
     },
     "autoupdate": {
         "architecture": {
-            "64bit": { "url": "https://rudydesk.com/downloads/v$version/RudyDesk-Portable.exe#/RudyDesk.exe" }
+            "64bit": {
+                "url": "https://rudydesk.com/downloads/v$version/RudyDesk-Portable.exe#/RudyDesk.exe"
+            }
         }
     }
 }
